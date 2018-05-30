@@ -2,7 +2,7 @@
 <h3>商品列表</h3>
 <ul>
   <!-- <li *ngFor="let goods of list"> -->
-      <li *ngFor="let goods of httpList | async">
+    <li *ngFor="let goods of httpList | async">
     <p>商品名:{{goods.name}}</p>
     <p>价格:{{goods.price}}</p>
     <p>折扣:{{goods.discount}}折</p>
