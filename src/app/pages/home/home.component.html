@@ -1,0 +1,11 @@
+<h1>首页</h1>
+<h3>商品列表</h3>
+<ul>
+  <!-- <li *ngFor="let goods of list"> -->
+      <li *ngFor="let goods of httpList | async">
+    <p>商品名:{{goods.name}}</p>
+    <p>价格:{{goods.price}}</p>
+    <p>折扣:{{goods.discount}}折</p>
+    <p>库存:{{goods.num}}件</p>
+  </li>
+</ul>
